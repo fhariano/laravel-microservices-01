@@ -14,4 +14,8 @@ class Category extends Model
         'url',
         'description',
     ];
+
+    public function companies() {
+        return $this->hasMany(Company::class);
+    }
 }

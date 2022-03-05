@@ -70,7 +70,7 @@ class CategoryController extends Controller
 
         $category->update($request->validated());
 
-        return response()->json(['message' => 'success']);
+        return response()->json(['message' => 'updated']);
     }
 
     /**
